@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+            border: 2px solid black;
+            background-color: aquamarine;
+            display: inline-block;
+            margin: 60px;
+        }
+        
+        .in {
+            border: 2px solid black;
+            background-color: aquamarine;
+            display: block;
+        }
+        
+        div.child {
+            height: 50px;
+            width: 100px;
+            background-color: darkgray;
+            margin: 50px;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        #parent {
+            width: 100%;
+            height: 800px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+        }
+        
+        #nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- block -->
+    <!-- <h1 class="block">Lorem ipsum dolor sit amet consectetur adipisicing.</h1> -->
+    <!-- inline -->
+    <!-- <span class="in">Lorem ipsum dolor sit amet consectetur adipisicing.</span> -->
+
+    <!-- disp flex -->
+    <!-- <div id="parent"> -->
+    <!-- <div class="child">A</div> -->
+    <!-- <div class="child">B</div> -->
+    <!-- <div class="child">C</div> -->
+    <!-- <div class="child">D</div> -->
+    <!-- </div> -->
+    <div id="nav">
+        <h1>Logo</h1>
+        <ul>
+            <li class="child">Home</li>
+            <li class="child">Contact no</li>
+            <li class="child">About us</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
